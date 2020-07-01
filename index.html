@@ -11,15 +11,15 @@
     <div class='col-a'>
       <div class='content-form'>
         <img class='logo' src='./src/img/logo.png' />
-
         <h1>Planilha<br>Completa</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
           Rerum eveniet, aspernatur illum expedita voluptates.</p>
-  
-          <form method='post' action='processaForm.php'>
-            <input type='text' name='nome' class='input' />
-            <input type='email' name='email' class='input' />
-            <button type='button'>Quero minha planilha</button>
+          <form method="POST" action="https://smtl.gama.academy/leads/bfeee317-b7e1-11ea-8228-89cff86db9a0">
+            <input name="name" type="text" class='input' pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo" required />
+            <input name="email" type="email" class='input' title="Digite um email válido" required />
+            <input name="redirectTo" type="hidden" value="https://gama.academy" />
+            <input name="debugMode" type="hidden" value="true" />
+            <button type="submit">Quero Minha Planilha</button>
           </form>
       </div>
     </div>
@@ -28,14 +28,11 @@
       <div class='celular'>
         <div class='celular-tela'>
           <div class='camera'></div>
-        
-          <div class='row'>
+                  <div class='row'>
             <span class='hashtag'>#checklist</span>
             <span class='hashtag'>#completo<img src='./src/img/fogo.png' class='fogo' /></span>
-    
-            <img src='./src/img/mina.png' class='mina' />
-    
-            <div class='texto-celular'>O melhor checklist para organizar o meu dia</div>
+                <img src='./src/img/mina.png' class='mina' />
+                <div class='texto-celular'>O melhor checklist para organizar o meu dia</div>
           </div>
         </div>
       </div>
