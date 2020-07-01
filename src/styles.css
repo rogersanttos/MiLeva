@@ -17,6 +17,9 @@ body {
 body {
     display: flex;
     justify-content: space-between;
+}
+
+.home-page {
     background: white url('img/background.png') top right no-repeat;
     background-size: 60%;
 }
@@ -126,6 +129,9 @@ body {
 
 .titulo-obrigado {
     color: #8a97d3;
+    letter-spacing: 8px;
+    font-size: 62px;
+    margin-bottom: 50px;
 }
 
 
@@ -143,6 +149,79 @@ body {
 .thanks section {
     width: 100%;
 }
+
+.thanks video {
+    float: left;
+    position: relative;
+}
+
+.thanks section {
+    position: relative;
+    float: left;
+    background: white url('img/background_pagina_thank_you.png') bottom right no-repeat;
+    background-size: 70%;
+    height: 100%;
+}
+
+.thanks header {
+    background: #F1A430;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-thanks {
+    height: 60px;
+    margin-top: 10px;
+}
+
+.carro {
+    width: 50%;
+    right: 5%;
+    bottom: 100px;
+    position: absolute;
+}
+
+.thanks footer {
+    text-align: center;
+    font-size: 18px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+}
+
+.thanks-content {
+    width: 350px;
+    margin: 100px 0 70px 15%;
+}
+
+.thanks-content a {
+    width: 100%;
+    border-radius: 500px;
+    border: 0;
+    background: #FF4F5C;
+    font-weight: bold;
+    font-family: 'Open Sans', Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    height: 45px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: all .2s ease;
+    border: 2px solid transparent;
+    float: left;
+}
+
+.thanks-content a:hover {
+    background: white;
+    color: #FF4F5C;
+    border: 2px solid #FF4F5C;
+}
+
 /* THANKS PAGE */
 
 /* Media Queries - Responsivo */
