@@ -2,15 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>MiLeva</title>
+    <title>My First Parcel App</title>
     <link rel="stylesheet" href="./src/styles.css" />
     <script src="./src/app.js"></script>
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37792553-2"></script>
+     <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-37792553-2');
+     </script>
+ 
+      <!-- Facebook Pixel Code -->
+       <script>
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '955119961580450');
+          fbq('track', 'PageView');
+       </script>
+       <noscript>
+         <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=955119961580450&ev=PageView&noscript=1"/>
+       </noscript>
+       <!-- End Facebook Pixel Code -->
   </head>
   <body>
 
     <div class='col-a'>
       <div class='content-form'>
-        <img class='logo' src='./src/img/logo.png' />
+        <div class='row'>
+          <img class='logo' src='./src/img/logo.png' />
+        </div>
 
         <h1>Planilha<br>Completa</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -25,20 +54,8 @@
     </div>
 
     <div class='col-b'>
-      <div class='celular'>
-        <div class='celular-tela'>
-          <div class='camera'></div>
-        
-          <div class='row'>
-            <span class='hashtag'>#checklist</span>
-            <span class='hashtag'>#completo<img src='./src/img/fogo.png' class='fogo' /></span>
-    
-            <img src='./src/img/mina.png' class='mina' />
-    
-            <div class='texto-celular'>O melhor checklist para organizar o meu dia</div>
-          </div>
-        </div>
-      </div>
+        <img src='./src/img/mulher.png' class='celular' />
+        <img src='./src/img/background.png' class='background-mobile' />
     </div>
 
   </body>
