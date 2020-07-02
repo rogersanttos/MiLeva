@@ -1,40 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8" />
     <title>Mileva</title>
     <link rel="stylesheet" href="./src/styles.css" />
     <script src="./src/app.js"></script>
-     <!-- Global site tag (gtag.js) - Google Analytics -->
-     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37792553-2"></script>
-     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-    
-        gtag('config', 'UA-37792553-2');
-     </script>
- 
-      <!-- Facebook Pixel Code -->
-       <script>
-          !function(f,b,e,v,n,t,s)
-          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-          n.queue=[];t=b.createElement(e);t.async=!0;
-          t.src=v;s=b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t,s)}(window, document,'script',
-          'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '955119961580450');
-          fbq('track', 'PageView');
-       </script>
-       <noscript>
-         <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=955119961580450&ev=PageView&noscript=1"/>
-       </noscript>
-       <!-- End Facebook Pixel Code -->
+     <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MZ63CZM');</script>
+    <!-- End Google Tag Manager -->
   </head>
-  <body class='home-page'>
 
+  <body class='home-page'>
     <div class='col-a'>
       <div class='content-form'>
         <div class='row'>
@@ -44,7 +24,7 @@
         <h1>O Novo Aplicativo de Mobilidade Urbana</h1>
         <p>Baixe a Planilha e seja 5 estrelas em todas as suas corridas.</p>
         <p>Junte-Se ao nosso time!</p>
-          <!--  -->
+          <!-- Início do Formulário da Gama Academy-->
           <form method="POST" action="https://smtl.gama.academy/leads/bfeee317-b7e1-11ea-8228-89cff86db9a0">
             <input
               placeholder="Digite seu nome completo"
@@ -66,6 +46,7 @@
             <input name="redirectTo" type="hidden" value="https://mileva-dh.netlify.app/thanks.html" />            
             <input type="submit" id="botao_planilha" value="Quero Minha Planilha"/>
           </form>
+          <!--Fim do Formulário da Gama Academy-->
       </div>
     </div>
 
@@ -74,5 +55,9 @@
         <img src='./src/img/background.png' class='background-mobile' />
     </div>
 
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZ63CZM"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
   </body>
 </html>
