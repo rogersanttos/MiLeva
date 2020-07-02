@@ -24,6 +24,16 @@ body {
     background-size: 60%;
 }
 
+img.foto {
+    width: 600px;
+    margin: 26% -290px;
+    z-index: 1;
+}
+
+img.background2 {
+    width: 800px;
+}
+
 .row {
     width: 100%;
     float: left;
@@ -43,7 +53,11 @@ body {
 .content-form h1 {
     width: 100%;
     font-weight: bold;
+<<<<<<< HEAD
     font-size: 55px;
+=======
+    font-size: 50px;
+>>>>>>> 815b1d567af34c8e5addacde4813d5fea78bda7b
     letter-spacing: 1px;
     line-height: 70px;
     font-family: 'Open Sans', Tahoma, Arial, Helvetica, sans-serif;
@@ -268,7 +282,7 @@ body {
     }
 
     .content-form h1 {
-        font-size: 35px;
+        font-size: 30px;
         letter-spacing: 0px;
         line-height: 50px;
     }
@@ -310,6 +324,5 @@ body {
         z-index: 1;
         margin-bottom: 40px
     }
-
-}
-
+    
+}   
