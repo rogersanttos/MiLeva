@@ -6,83 +6,86 @@
     <link rel="stylesheet" href="./src/styles.css" />
     <script src="./src/app.js"></script>
      <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MZ63CZM');</script>
-  <!-- End Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-MZ63CZM');</script>
+      <!-- End Google Tag Manager -->
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
    </head>
   <body>
 
   <body class='home-page'>
-    <div class='col-a'>
-      <div class='content-form'>
-        <div class='row'>
-          <img class='logo' src='./src/img/logo.png' />
-        </div>
-
-        <h1>O Novo Aplicativo de Mobilidade Urbana</h1>
-        <p>Baixe a Planilha e seja 5 estrelas em todas as suas corridas.</p>
-        <p>Junte-Se ao nosso time!</p>
-          <!-- Início do Formulário Gama Academy -->
-          <form method="POST" action="https://smtl.gama.academy/leads/bfeee317-b7e1-11ea-8228-89cff86db9a0">
-            <input
-              placeholder="Digite seu nome completo"
-              name="name"
-              type="text"
-              class='input'
-              pattern="^\D{2,}\s[\D\s]{2,}$"
-              title="Digite seu nome completo"
-              required
-            />
-            <input
-              placeholder="Digite seu melhor email"
-              name="email"
-              type="email"
-              class='input'              
-              title="Digite um email válido"
-              required
-            />
-            <input name="redirectTo" type="hidden" value="https://mileva-dh.netlify.app/thanks.html" />            
-            <input type="submit" id="botao_planilha" value="Quero Minha Planilha"/>
-          </form>
-          <!--Fim do Formulário Gama Academy -->
-      </div>
-    </div>
-
-    <div class='col-b'>
-        <img src='./src/img/mulher.png' class='celular' />
-        <img src='./src/img/background.png' class='background-mobile' />
-    </div>
-    
-    <div class='rodape'>
-      <div class='imagens'>
-        <img class='foto' src='src/img/homem.png' />
-        <img class='background2' src='src/img/background2.png' />
-      </div>
-      <div class='content-form'>
-        <div class='row1'>
-          <img class='logo' src='./src/img/logo.png' />
+    <section class='row fl'>
+      <div class='col-a fl'>
+        <div class='content-form'>
+          <div class='row'>
+            <img class='logo' src='./src/img/logo.png' />
+          </div>
+  
+          <h1>O Novo Aplicativo de Mobilidade Urbana</h1>
+          <p>Baixe a Planilha e seja 5 estrelas em todas as suas corridas.</p>
+          <p>Junte-Se ao nosso time!</p>
+            <!-- Início do Formulário Gama Academy -->
+            <form method="POST" action="https://smtl.gama.academy/leads/bfeee317-b7e1-11ea-8228-89cff86db9a0">
+              <input
+                placeholder="Digite seu nome completo"
+                name="name"
+                type="text"
+                class='input'
+                pattern="^\D{2,}\s[\D\s]{2,}$"
+                title="Digite seu nome completo"
+                required
+              />
+              <input
+                placeholder="Digite seu melhor email"
+                name="email"
+                type="email"
+                class='input'              
+                title="Digite um email válido"
+                required
+              />
+              <input name="redirectTo" type="hidden" value="https://mileva-dh.netlify.app/thanks.html" />            
+              <input type="submit" id="botao_planilha" value="Quero Minha Planilha"/>
+            </form>
+            <!--Fim do Formulário Gama Academy -->
         </div>
       </div>
-    </div>
-    <div id='texto'>
-        <p>Nós colocamos você em primeiro lugar. Conte com suporte 24h.</p>
-      </br>
-      <p>Nós cuidamos da sua saúde financeira. Consultoria gratuita.</p>
-    </br>
-      <p>Conte com as menores taxas de mercado. E rapidez no pagamento.</p>
-    </br>
-      <p>Aqui você pode agendar suas corridas e organizar o seu dia.</p>
-    </br>
-      <p>Programa de parceiros garante descontos exclusivos para você.</p>
-    </br>
-      <p>Aqui você pode ser favorito e seu cliente te chamar para a corrida.</p>
-    </div>
-    <footer>
-      Copyright © 2020 Mileva Company All rights reserved.
-    </footer>
+  
+      <div class='col-b fl'>
+          <img src='./src/img/mulher.png' class='celular' />
+          <img src='./src/img/background.png' class='background-mobile' />
+      </div>
+    </section>
+
+    <section class='fl row descricao'>
+      <div class='col-a fl desktop'>
+        <img src='./src/img/homem.png' class='homem' />
+      </div>
+
+      <div class='col-b fl'>
+        <div class='fl content-descricao'>
+          <div class='row'>
+            <img class='logo-descricao' src='./src/img/logo.png' />
+          </div>
+
+          <h6 class='desc-title'>Confira os benefícios imperdíveis:</h6>
+  
+          <img src='src/img/desc1.png' class='desc fl' />
+          <img src='src/img/desc2.png' class='desc fr' />
+        </div>
+      </div>
+
+      <div class='col-a fl mobile'>
+        <img src='./src/img/homem.png' class='homem' />
+      </div>
+
+      <footer>
+        Copyright © 2020 Mileva Company All rights reserved.
+      </footer>
+    </section>
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZ63CZM"

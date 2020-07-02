@@ -14,29 +14,33 @@ body {
     line-height: 1;
 }
 
-body {
-    display: flex;
-    justify-content: space-between;
-}
-
 .home-page {
     background: white url('img/background.png') top right no-repeat;
     background-size: 60%;
 }
 
-img.foto {
+.foto {
     width: 600px;
     margin: 26% -290px;
     z-index: 1;
 }
 
-img.background2 {
+.background2 {
     width: 800px;
 }
 
 .row {
+    position: relative;
     width: 100%;
     float: left;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
 }
 
 /* Container Form */
@@ -53,11 +57,7 @@ img.background2 {
 .content-form h1 {
     width: 100%;
     font-weight: bold;
-<<<<<<< HEAD
-    font-size: 55px;
-=======
     font-size: 50px;
->>>>>>> 815b1d567af34c8e5addacde4813d5fea78bda7b
     letter-spacing: 1px;
     line-height: 70px;
     font-family: 'Open Sans', Tahoma, Arial, Helvetica, sans-serif;
@@ -105,6 +105,7 @@ img.background2 {
     transition: all .2s ease;
     border: 2px solid transparent;
 }
+
 #botao_planilha {
     width: 100%;
     border-radius: 500px;
@@ -150,7 +151,7 @@ img.background2 {
 
 .celular {
     position: relative;
-    width: 45%;
+    width: 50%;
     margin: 100px 0 0 15%;
 }
 
@@ -165,7 +166,52 @@ img.background2 {
     margin-bottom: 50px;
 }
 
+.homem { 
+    width: 80%;
+    margin: 150px 0 0 0;
+    position: relative;
+    float: right;
+}
 
+.descricao {
+    background: url('img/background2.png') left bottom no-repeat;
+    background-size: 40%;
+    min-height: 800px;
+    width: 100%;
+    padding: 100px 0 100px;
+    float: left;
+    position: relative;
+}
+
+.descricao footer {
+    margin-bottom: 50px;
+}
+
+.logo-descricao {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.content-descricao {
+    width: 52%;
+    min-width: 600px;
+    margin: 100px 0 100px 13%;
+}
+
+.desc-title {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 35px 0 10px;
+    font-size: 24px;
+    color: #525151;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.desc {
+    margin-top: 30px;
+}
 
 /* THANKS PAGE */
 .thanks {
@@ -174,10 +220,10 @@ img.background2 {
     justify-content: unset;
 }
 
-.thanks header,
-.thanks video,
-.thanks footer,
-.thanks section {
+header,
+video,
+footer,
+section {
     width: 100%;
 }
 
@@ -213,6 +259,7 @@ img.background2 {
     position: absolute;
 }
 
+.descricao footer,
 .thanks footer {
     text-align: center;
     font-size: 18px;
@@ -255,6 +302,14 @@ img.background2 {
 
 /* THANKS PAGE */
 
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
 /* Media Queries - Responsivo */
 @media screen and (max-width: 1024px) {
     body {
@@ -262,6 +317,10 @@ img.background2 {
         justify-content: unset;
         background: white;
         background-size: 100%;
+    }
+
+    .home-page {
+        background-image: unset;
     }
 
     .logo {
@@ -303,6 +362,38 @@ img.background2 {
         width: 100%;
         z-index: 0;
         transform: rotate(180deg);
+    }
+
+    .descricao {
+        background: url(img/background2.png) left bottom no-repeat;
+        background-size: 80%;
+        min-height: unset;
+        width: 100%;
+        padding: 30px 0 50px;
+    }
+
+    .content-descricao {
+        width: 90%;
+        min-width: unset;
+        margin: 50px 5% 20px 5%;
+    }
+
+    .desc {
+        width: 60%;
+        margin: 20px 20% 20px 20%;
+    }
+        
+    .homem { 
+        width: 80%;
+        margin: 70px 10%;
+    }
+  
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
     }
 }
 
