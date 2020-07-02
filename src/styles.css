@@ -21,6 +21,12 @@ body {
     background-size: 60%;
 }
 
+img.foto {
+    width: 600px;
+    margin: 26% -290px;
+    z-index: 1;
+}
+
 .row {
     width: 100%;
     float: left;
