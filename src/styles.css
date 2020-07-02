@@ -27,6 +27,10 @@ img.foto {
     z-index: 1;
 }
 
+img.background2 {
+    width: 800px;
+}
+
 .row {
     width: 100%;
     float: left;
