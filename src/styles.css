@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,14 +14,33 @@ body {
     line-height: 1;
 }
 
-body {
-    display: flex;
-    justify-content: space-between;
-    background: white url('img/bg-laranja.png') top right no-repeat;
+.home-page {
+    background: white url('img/background.png') top right no-repeat;
+    background-size: 60%;
 }
+
+.foto {
+    width: 600px;
+    margin: 26% -290px;
+    z-index: 1;
+}
+
+.background2 {
+    width: 800px;
+}
+
 .row {
+    position: relative;
     width: 100%;
     float: left;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
 }
 
 /* Container Form */
@@ -32,21 +53,25 @@ body {
     margin: 100px 0 0 35%;
 }
 
+.titulo-obrigado,
 .content-form h1 {
     width: 100%;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 50px;
     letter-spacing: 1px;
-    color: #010c38;
     line-height: 70px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Open Sans', Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.content-form h1 {
+    color: #010c38;
 }
 
 .content-form p { 
     color: #8a97d3;
     font-style: 20px;
     text-align: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Open Sans', Tahoma, Arial, Helvetica, sans-serif;
     text-shadow: 0 0 1px #8a97d3;
     line-height: 20px;
     margin-top: 20px;
@@ -63,13 +88,14 @@ body {
     margin-top: 40px;
 }
 
+.link_download,
 .content-form form button {
     width: 100%;
     border-radius: 500px;
     border: 0;
     background: #8a97d3;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Open Sans', Tahoma, Arial, Helvetica, sans-serif;
     font-size: 16px;
     text-align: center;
     line-height: 40px;
@@ -80,6 +106,25 @@ body {
     border: 2px solid transparent;
 }
 
+#botao_planilha {
+    width: 100%;
+    border-radius: 500px;
+    border: 0;
+    background: #8a97d3;
+    font-weight: bold;
+    font-family: 'Open Sans', Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    height: 45px;
+    color: white;
+    cursor: pointer;
+    transition: all .2s ease;
+    border: 2px solid transparent;
+}
+
+
+.link_download:hover,
 .content-form form button:hover {
     background: white;
     color:  #8a97d3;
@@ -105,68 +150,270 @@ body {
 }
 
 .celular {
-    border: 10px solid black;
-    background: black;
-    width: 320px;
-    height: 630px;
-    border-radius: 50px;
-    font-family: Arial, Helvetica, sans-serif;
     position: relative;
-    margin: 100px 0 0 35%;
+    width: 50%;
+    margin: 100px 0 0 15%;
 }
 
-.celular-tela {
-    background: white;
-    padding: 30px;
+.background-mobile {
+    display: none;
+}
+
+.titulo-obrigado {
+    color: #8a97d3;
+    letter-spacing: 8px;
+    font-size: 62px;
+    margin-bottom: 50px;
+}
+
+.homem { 
+    width: 80%;
+    margin: 150px 0 0 0;
+    position: relative;
+    float: right;
+}
+
+.descricao {
+    background: url('img/background2.png') left bottom no-repeat;
+    background-size: 40%;
+    min-height: 800px;
     width: 100%;
-    height: 590px;
+    padding: 100px 0 100px;
     float: left;
-    border-radius: 40px;
-    margin-top: 10px
+    position: relative;
 }
 
-.camera {
-    width: 70%;
-    margin: -40px 15% 20px;
-    border-radius: 15px;
-    height: 50px;
-    background: black;
+.descricao footer {
+    margin-bottom: 50px;
 }
 
-.hashtag {
+.logo-descricao {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.content-descricao {
+    width: 52%;
+    min-width: 600px;
+    margin: 100px 0 100px 13%;
+}
+
+.desc-title {
+    float: left;
     width: 100%;
-    float: left;
-    font-size: 35px;
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: underline;
-    margin-bottom: 5px;
-}
-
-.mina {
-    position: relative;
-    margin: 20px 0 0 -100px;
-    width: 390px;
-}
-
-.fogo {
-    height: 40px;
-    margin: 0 0 -10px 10px;
-}
-
-.texto-celular {
-    border-radius: 500px;
-    height: 45px;
-    z-index: 9;
-    position: relative;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    border: 1px solid orangered;
-    width: 100%;
-    margin: -10px 0 0 0;
-    background: white;
-    font-weight: bold;
-    padding: 5px 15px 0;
-    color: black;
+    margin: 35px 0 10px;
+    font-size: 24px;
+    color: #525151;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: normal;
 }
+
+.desc {
+    margin-top: 30px;
+}
+
+/* THANKS PAGE */
+.thanks {
+    width: 100%;
+    display: block;
+    justify-content: unset;
+}
+
+header,
+video,
+footer,
+section {
+    width: 100%;
+}
+
+.thanks video {
+    float: left;
+    position: relative;
+}
+
+.thanks section {
+    position: relative;
+    float: left;
+    background: white url('img/background_pagina_thank_you.png') bottom right no-repeat;
+    background-size: 70%;
+    height: 100%;
+}
+
+.thanks header {
+    background: #F1A430;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-thanks {
+    height: 60px;
+    margin-top: 10px;
+}
+
+.carro {
+    width: 50%;
+    right: 5%;
+    bottom: 100px;
+    position: absolute;
+}
+
+.descricao footer,
+.thanks footer {
+    text-align: center;
+    font-size: 18px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+}
+
+.thanks-content {
+    width: 350px;
+    margin: 100px 0 70px 15%;
+}
+
+.thanks-content a {
+    width: 100%;
+    border-radius: 500px;
+    border: 0;
+    background: #FF4F5C;
+    font-weight: bold;
+    font-family: 'Open Sans', Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    height: 45px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: all .2s ease;
+    border: 2px solid transparent;
+    float: left;
+}
+
+.thanks-content a:hover {
+    background: white;
+    color: #FF4F5C;
+    border: 2px solid #FF4F5C;
+}
+
+/* THANKS PAGE */
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+/* Media Queries - Responsivo */
+@media screen and (max-width: 1024px) {
+    body {
+        display: block;
+        justify-content: unset;
+        background: white;
+        background-size: 100%;
+    }
+
+    .home-page {
+        background-image: unset;
+    }
+
+    .logo {
+        width: 60%;
+        margin-bottom: 50px;
+        float: left;
+    }
+
+    .col-a,
+    .col-b {
+        width: 100%;
+        position: relative;
+    }
+
+    .content-form {
+        width: 80%;
+        margin: 50px 10% 0;
+    }
+
+    .content-form h1 {
+        font-size: 30px;
+        letter-spacing: 0px;
+        line-height: 50px;
+    }
+
+    .celular {
+        position: relative;
+        width: 80%;
+        margin: 50px 10% 0;
+        z-index: 1;
+        margin-bottom: 40px
+    }
+
+    .background-mobile {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        z-index: 0;
+        transform: rotate(180deg);
+    }
+
+    .descricao {
+        background: url(img/background2.png) left bottom no-repeat;
+        background-size: 80%;
+        min-height: unset;
+        width: 100%;
+        padding: 30px 0 50px;
+    }
+
+    .content-descricao {
+        width: 90%;
+        min-width: unset;
+        margin: 50px 5% 20px 5%;
+    }
+
+    .desc {
+        width: 60%;
+        margin: 20px 20% 20px 20%;
+    }
+        
+    .homem { 
+        width: 80%;
+        margin: 70px 10%;
+    }
+  
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .content-form {
+        width: 70%;
+        margin: 50px 15% 0;
+    }
+
+    .content-form h1 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .celular {
+        position: relative;
+        width: 70%;
+        margin: 50px 15% 0;
+        z-index: 1;
+        margin-bottom: 40px
+    }
+    
+}   

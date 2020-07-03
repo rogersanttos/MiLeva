@@ -1,45 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8" />
-    <title>MiLeva</title>
+    <meta name="description" content="Você quer se tornar um motorista de aplicativo 5 estrelas? Aprenda em 10 passos como se tornar um hoje mesmo com a Mi Leva app."/>
+    <meta name="keywords" content="Motorista de aplicativo"/>
+    <meta name="title" content="Motorista de aplicativo: 10 passos para se tornar um 5 estrelas"/>
+    <meta name="author" content="Mileva"/>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Mileva</title>
     <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="shortcut icon" href="src/img/icone.png">
     <script src="./src/app.js"></script>
-  </head>
+     <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-MZ63CZM');</script>
+      <!-- End Google Tag Manager -->
+
+      
+   </head>
   <body>
 
-    <div class='col-a'>
-      <div class='content-form'>
-        <img class='logo' src='./src/img/logo.png' />
-
-        <h1>Planilha<br>Completa</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-          Rerum eveniet, aspernatur illum expedita voluptates.</p>
-  
-          <form method='post' action='processaForm.php'>
-            <input type='text' name='nome' class='input' />
-            <input type='email' name='email' class='input' />
-            <button type='button'>Quero minha planilha</button>
-          </form>
-      </div>
-    </div>
-
-    <div class='col-b'>
-      <div class='celular'>
-        <div class='celular-tela'>
-          <div class='camera'></div>
-        
+  <body class='home-page'>
+    <section class='row fl'>
+      <div class='col-a fl'>
+        <div class='content-form'>
           <div class='row'>
-            <span class='hashtag'>#checklist</span>
-            <span class='hashtag'>#completo<img src='./src/img/fogo.png' class='fogo' /></span>
-    
-            <img src='./src/img/mina.png' class='mina' />
-    
-            <div class='texto-celular'>O melhor checklist para organizar o meu dia</div>
+            <img class='logo' src='./src/img/logo.png' />
           </div>
+  
+          <h1>Motorista de aplicativo: Se torne um 5 estrelas
+            mesma</h1>
+          <p>Baixe nosso Ebook e seja 5 estrelas em todas as suas corridas.</p>
+          <p>Junte-Se ao nosso time!</p>
+            <!-- Início do Formulário Gama Academy -->
+            <form method="POST" action="https://smtl.gama.academy/leads/bfeee317-b7e1-11ea-8228-89cff86db9a0">
+              <input
+                placeholder="Digite seu nome completo"
+                name="name"
+                type="text"
+                class='input'
+                pattern="^\D{2,}\s[\D\s]{2,}$"
+                title="Digite seu nome completo"
+                required
+              />
+              <input
+                placeholder="Digite seu melhor email"
+                name="email"
+                type="email"
+                class='input'              
+                title="Digite um email válido"
+                required
+              />
+              <input name="redirectTo" type="hidden" value="https://mileva-dh.netlify.app/thanks.html" />            
+              <input type="submit" id="botao_planilha" value="Quero Meu Ebook"/>
+            </form>
+            <!--Fim do Formulário Gama Academy -->
         </div>
       </div>
-    </div>
+  
+      <div class='col-b fl'>
+          <img src='./src/img/mulher.png' class='celular' />
+          <img src='./src/img/background.png' class='background-mobile' />
+      </div>
+    </section>
 
+    <section class='fl row descricao'>
+      <div class='col-a fl desktop'>
+        <img src='./src/img/homem.png' class='homem' />
+      </div>
+
+      <div class='col-b fl'>
+        <div class='fl content-descricao'>
+          <div class='row'>
+            <img class='logo-descricao' src='./src/img/logo.png' />
+          </div>
+
+          <h6 class='desc-title'>Confira os benefícios imperdíveis:</h6>
+  
+          <img src='src/img/desc1.png' class='desc fl' />
+          <img src='src/img/desc2.png' class='desc fr' />
+        </div>
+      </div>
+
+      <div class='col-a fl mobile'>
+        <img src='./src/img/homem.png' class='homem' />
+      </div>
+
+      <footer>
+        Copyright © 2020 Mileva Company All rights reserved.
+      </footer>
+    </section>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZ63CZM"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
   </body>
 </html>
